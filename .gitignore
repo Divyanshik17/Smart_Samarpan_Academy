@@ -1,0 +1,43 @@
+# Environment variables
+.env
+.env.*
+*.env
+frontend/.env
+server/.env
+
+# Dependencies
+node_modules/
+frontend/node_modules/
+server/node_modules/
+
+# Build and distribution
+dist/
+dist-ssr/
+frontend/dist/
+build/
+
+# Personal browser profile & caches
+.brave_profile/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Server uploaded user media
+server/uploads/*
+!server/uploads/.gitkeep
+
+# Documentation & PDF guides
+*.pdf
+master_guide.html
+master_guide.pdf
+

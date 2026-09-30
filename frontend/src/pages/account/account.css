@@ -1,0 +1,278 @@
+/* ================================================================
+   Samarpan Math Academy — Account Page
+   Warm, Human-Centered, Modern Mathematics Academy Theme
+   ================================================================ */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap");
+
+:root {
+  --ac-bg:          #f8f7f2;
+  --ac-surface:     #ffffff;
+  --ac-s2:          #f4f2eb;
+  --ac-border:      #e5e1d8;
+  --ac-border-soft: #eeebe3;
+  --ac-navy:        #172554;
+  --ac-navy-dark:   #0f172a;
+  --ac-navy-light:  #1e3a8a;
+  --ac-teal:        #0f766e;
+  --ac-teal-light:  #ccfbf1;
+  --ac-amber:       #d97706;
+  --ac-amber-light: #fef3c7;
+  --ac-muted:       #4b5563;
+  --ac-light:       #6b7280;
+  --ac-text:        #1f2937;
+  --ease:           cubic-bezier(0.22, 1, 0.36, 1);
+  --tr:             all 0.28s var(--ease);
+}
+
+.ac-page {
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+  background: var(--ac-bg);
+  color: var(--ac-text);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+  padding: 48px 20px 80px;
+}
+
+/* Account Card */
+.ac-card {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 480px;
+  background: var(--ac-surface);
+  border: 1px solid var(--ac-border);
+  border-radius: 20px;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 4px 20px -2px rgba(23, 37, 84, 0.08);
+  animation: acFadeUp 0.55s var(--ease) both;
+}
+
+@keyframes acFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Header Banner */
+.ac-card-banner {
+  height: 120px;
+  background: var(--ac-navy);
+  position: relative;
+}
+
+/* Profile Picture */
+.ac-profile-pic-wrapper {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: -50px auto 16px;
+  z-index: 2;
+}
+
+.ac-profile-pic {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  z-index: 5;
+}
+
+/* User Details */
+.ac-user-info {
+  text-align: center;
+  padding: 0 24px;
+}
+
+.ac-user-name {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--ac-navy);
+  margin: 0 0 4px;
+  letter-spacing: -0.015em;
+}
+
+.ac-user-role {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ac-teal);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0 0 20px;
+}
+
+/* Info Rows */
+.ac-details-list {
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.ac-detail-item {
+  display: flex;
+  align-items: center;
+  background: var(--ac-bg);
+  border: 1px solid var(--ac-border);
+  padding: 12px 16px;
+  border-radius: 12px;
+  gap: 14px;
+  transition: var(--tr);
+}
+
+.ac-detail-item:hover {
+  border-color: var(--ac-teal);
+  background: #ffffff;
+  transform: translateX(2px);
+}
+
+.ac-detail-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--ac-surface);
+  border: 1px solid var(--ac-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ac-navy);
+  font-size: 18px;
+  flex-shrink: 0;
+  transition: var(--tr);
+}
+
+.ac-detail-item:hover .ac-detail-icon {
+  background: var(--ac-teal-light);
+  color: var(--ac-teal);
+  border-color: #99f6e4;
+}
+
+.ac-detail-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  overflow: hidden;
+}
+
+.ac-detail-label {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--ac-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.ac-detail-value {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ac-navy);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ac-detail-row {
+  display: flex;
+  gap: 12px;
+}
+
+.ac-detail-item.half {
+  flex: 1;
+  padding: 10px 14px;
+  gap: 10px;
+}
+
+.ac-detail-icon.blue {
+  color: var(--ac-navy);
+}
+
+.ac-detail-icon.green {
+  color: var(--ac-teal);
+}
+
+/* Buttons */
+.ac-actions {
+  padding: 0 24px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ac-btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.ac-btn-outline {
+  background: #ffffff;
+  border: 1px solid var(--ac-border);
+  color: var(--ac-navy);
+  font-weight: 600;
+}
+
+.ac-btn-outline:hover {
+  background: var(--ac-bg);
+  border-color: var(--ac-navy);
+}
+
+.ac-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--tr);
+  border: none;
+  outline: none;
+}
+
+.ac-btn-dashboard {
+  background: var(--ac-navy);
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(23, 37, 84, 0.15);
+}
+
+.ac-btn-dashboard:hover {
+  background: var(--ac-navy-light);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(23, 37, 84, 0.25);
+}
+
+.ac-btn-admin {
+  background: var(--ac-navy);
+  color: #ffffff;
+}
+
+.ac-btn-admin:hover {
+  background: var(--ac-navy-light);
+  transform: translateY(-1px);
+}
+
+.ac-btn-logout {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #dc2626;
+}
+
+.ac-btn-logout:hover {
+  background: #fee2e2;
+  transform: translateY(-1px);
+}

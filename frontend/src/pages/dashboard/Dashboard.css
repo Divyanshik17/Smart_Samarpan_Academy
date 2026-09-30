@@ -1,0 +1,72 @@
+/* ================================================================
+   Samarpan Math Academy — Dashboard Page
+   Warm, Human-Centered, Modern Mathematics Academy Theme
+   ================================================================ */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap");
+
+.dash-page {
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+  background: #f8f7f2;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  padding: 48px 24px 80px;
+}
+
+.dash-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.dash-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dash-title {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 900;
+  color: #172554;
+  letter-spacing: -0.025em;
+  margin: 0 0 12px;
+}
+
+.dash-subtitle {
+  font-size: 1.05rem;
+  color: #4b5563;
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+
+.dash-empty {
+  text-align: center;
+  padding: 60px 24px;
+  background: #ffffff;
+  border: 1px dashed #cbd5e1;
+  border-radius: 16px;
+  margin-top: 30px;
+  box-shadow: 0 2px 6px rgba(23, 37, 84, 0.04);
+}
+
+.dash-empty-emoji {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.dash-empty-title {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #172554;
+  margin: 0 0 8px;
+}
+
+.dash-empty-hint {
+  color: #6b7280;
+  font-size: 0.95rem;
+  max-width: 480px;
+  margin: 0 auto;
+}
+

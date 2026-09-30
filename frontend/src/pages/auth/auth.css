@@ -1,0 +1,109 @@
+/* ================================================================
+   Samarpan Math Academy — Authentication Styles (Login, Register, OTP)
+   ================================================================ */
+.auth-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8f7f2;
+  min-height: 100vh;
+  padding: 32px 20px;
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+}
+
+.auth-form {
+  background-color: #ffffff;
+  padding: 36px 32px;
+  border-radius: 16px;
+  border: 1px solid #e5e1d8;
+  box-shadow: 0 4px 20px -2px rgba(23, 37, 84, 0.06);
+  text-align: center;
+  width: 100%;
+  max-width: 420px;
+}
+
+.auth-form h2 {
+  font-size: 26px;
+  font-weight: 800;
+  color: #172554;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.auth-form form {
+  text-align: left;
+}
+
+.auth-form form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #172554;
+  font-weight: 700;
+}
+
+.auth-form form input {
+  width: 100%;
+  padding: 11px 14px;
+  margin-bottom: 18px;
+  border: 1px solid #e5e1d8;
+  border-radius: 8px;
+  background-color: #fdfcf9;
+  color: #1f2937;
+  font-size: 14.5px;
+  font-family: inherit;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.auth-form form input:focus {
+  outline: none;
+  border-color: #0f766e;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.12);
+}
+
+.auth-form .common-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #172554;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 4px;
+  box-shadow: 0 2px 8px rgba(23, 37, 84, 0.15);
+}
+
+.auth-form .common-btn:hover {
+  background-color: #1e3a8a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(23, 37, 84, 0.25);
+}
+
+.auth-form .common-btn:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.auth-form p {
+  margin-top: 18px;
+  font-size: 13.5px;
+  color: #4b5563;
+}
+
+.auth-form p a {
+  color: #0f766e;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.auth-form p a:hover {
+  text-decoration: underline;
+  color: #172554;
+}
